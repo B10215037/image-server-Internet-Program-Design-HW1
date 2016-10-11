@@ -1,0 +1,14 @@
+environment:
+	linux (I use lubuntu)
+
+compile:
+	gcc server.c -o server.out
+	gcc client.c -o client.out
+
+run:
+	./server.out <port> <image 1 name> <image 2 name>
+	./client.out <IP> <port> <download image number(1 or 2)> <save image name>
+
+note:
+	* server won't stop until user close it, press "ctrl + c" to stop it.
+	* client.out save image at current directory (the same directory as client.out)
